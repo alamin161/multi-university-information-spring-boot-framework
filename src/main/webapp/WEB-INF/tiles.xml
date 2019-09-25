@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+		"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+		"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+
+<tiles-definitions>
+
+	<definition name="viewKisu" extends="app.homepage">
+		<put-attribute name="title" value="Kisui Na" />
+		<put-attribute name="content" value="/WEB-INF/tiles/kisuina.jsp" />
+	</definition>
+
+	<definition name="app.homepage" template="/WEB-INF/layouts/default.jsp">
+		<!--<put-attribute name="main" value="/WEB-INF/tiles/main.jsp" />-->
+		<put-attribute name="title" value="Login Page" />
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
+        <put-attribute name="aside" value="/WEB-INF/tiles/aside.jsp" />
+		<put-attribute name="content" value="/WEB-INF/tiles/login.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+	</definition>
+
+	<definition name="index" extends="app.homepage">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="content" value="/WEB-INF/tiles/index.jsp" />
+	</definition>
+
+	<definition name="home" extends="app.homepage">
+		<put-attribute name="title" value="Home" />
+		<!--put-attribute name="aside" value="/WEB-INF/tiles/aside.jsp" /-->
+		<put-attribute name="content" value="/WEB-INF/tiles/home.jsp" />
+	</definition>
+
+    <definition name="login" extends="app.homepage">
+        <put-attribute name="title" value="Login" />
+        <put-attribute name="content" value="/WEB-INF/tiles/login.jsp" />
+    </definition>
+
+    <definition name="userregistration" extends="app.homepage">
+        <put-attribute name="title" value="User Registration" />
+        <put-attribute name="content" value="/WEB-INF/tiles/userregistration.jsp" />
+    </definition>
+
+	<definition name="403error" extends="app.homepage">
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="content" value="/WEB-INF/tiles/403.jsp" />
+	</definition>
+
+	<definition name="test" extends="app.homepage">
+		<put-attribute name="title" value="Test" />
+		<put-attribute name="content" value="/WEB-INF/tiles/test.jsp" />
+	</definition>
+
+	<!--Varsity Area Start-->
+
+	<definition name="viewEngineeringVarsity" extends="app.homepage">
+		<put-attribute name="title" value="Engineering University" />
+		<put-attribute name="content" value="/WEB-INF/tiles/engineering.jsp" />
+	</definition>
+
+	<definition name="viewPrivateMedicalCollege" extends="app.homepage">
+		<put-attribute name="title" value="Private Medical College" />
+		<put-attribute name="content" value="/WEB-INF/tiles/privatemedical.jsp" />
+	</definition>
+
+	<definition name="viewPublicMedicalCollege" extends="app.homepage">
+		<put-attribute name="title" value="Public Medical College" />
+		<put-attribute name="content" value="/WEB-INF/tiles/publicmedical.jsp" />
+	</definition>
+
+	<definition name="viewPrivateUniversity" extends="app.homepage">
+		<put-attribute name="title" value="Private Varsity" />
+		<put-attribute name="content" value="/WEB-INF/tiles/privatevarsity.jsp" />
+	</definition>
+
+	<definition name="viewPublicVarsity" extends="app.homepage">
+		<put-attribute name="title" value="Public Varsity" />
+		<put-attribute name="content" value="/WEB-INF/tiles/publicvarsity.jsp" />
+	</definition>
+
+	<!--Varsity Area End-->
+
+	<!--Achievement Area Start-->
+
+	<definition name="viewPrivateMedicalCollegeAchievement" extends="app.homepage">
+		<put-attribute name="title" value="Private Medical College Achievement" />
+		<put-attribute name="content" value="/WEB-INF/tiles/privatemedicalachievement.jsp" />
+	</definition>
+
+	<definition name="viewEngineeringVarsityAchievement" extends="app.homepage">
+		<put-attribute name="title" value="Engineering University Achievement" />
+		<put-attribute name="content" value="/WEB-INF/tiles/engineeringvarsityachievement.jsp" />
+	</definition>
+
+	<definition name="viewPrivateUniversityAchievement" extends="app.homepage">
+		<put-attribute name="title" value="Private University Achievement" />
+		<put-attribute name="content" value="/WEB-INF/tiles/privatevarsityachievement.jsp" />
+	</definition>
+
+	<definition name="viewPublicVarsityAchievement" extends="app.homepage">
+		<put-attribute name="title" value="Public University Achievement" />
+		<put-attribute name="content" value="/WEB-INF/tiles/publicvarsityachievement.jsp" />
+	</definition>
+
+	<definition name="viewPublicMedicalCollegeAchievement" extends="app.homepage">
+		<put-attribute name="title" value="Public Medical College Achievement" />
+		<put-attribute name="content" value="/WEB-INF/tiles/publicmedicalachievement.jsp" />
+	</definition>
+
+	<!--Achievement Area End-->
+
+	<!--Research Area Start-->
+
+	<definition name="viewEngineeringVarsityResearch" extends="app.homepage">
+		<put-attribute name="title" value="Engineering Research" />
+		<put-attribute name="content" value="/WEB-INF/tiles/engineeringresearch.jsp" />
+	</definition>
+
+	<definition name="viewPrivateMedicalCollegeResearch" extends="app.homepage">
+		<put-attribute name="title" value="Private Medical Research" />
+		<put-attribute name="content" value="/WEB-INF/tiles/privatemedicalresearch.jsp" />
+	</definition>
+
+	<definition name="viewPublicMedicalCollegeResearch" extends="app.homepage">
+		<put-attribute name="title" value="Public Medical Research" />
+		<put-attribute name="content" value="/WEB-INF/tiles/publicmedicalresearch.jsp" />
+	</definition>
+
+	<definition name="viewPrivateUniversityResearch" extends="app.homepage">
+		<put-attribute name="title" value="Private Varsity Research" />
+		<put-attribute name="content" value="/WEB-INF/tiles/privatevarsityresearch.jsp" />
+	</definition>
+
+	<definition name="viewPublicVarsityResearch" extends="app.homepage">
+		<put-attribute name="title" value="Public Varsity Research" />
+		<put-attribute name="content" value="/WEB-INF/tiles/publicvarsityresearch.jsp" />
+	</definition>
+
+	<!--Research Area End-->
+
+	<!--Teacher Area Start-->
+	<definition name="viewEngineeringVarsityTeacher" extends="app.homepage">
+		<put-attribute name="title" value="Engineering University Teacher" />
+		<put-attribute name="content" value="/WEB-INF/tiles/engineeringteacher.jsp" />
+	</definition>
+
+	<definition name="viewPrivateMedicalCollegeTeacher" extends="app.homepage">
+		<put-attribute name="title" value="Private Medical College Teacher" />
+		<put-attribute name="content" value="/WEB-INF/tiles/privatemedicalteacher.jsp" />
+	</definition>
+
+	<definition name="viewPublicMedicalCollegeTeacher" extends="app.homepage">
+		<put-attribute name="title" value="Public Medical College Teacher" />
+		<put-attribute name="content" value="/WEB-INF/tiles/publicmedicalteacher.jsp" />
+	</definition>
+
+	<definition name="viewPrivateUniversityTeacher" extends="app.homepage">
+		<put-attribute name="title" value="Private University Teacher" />
+		<put-attribute name="content" value="/WEB-INF/tiles/privateteacher.jsp" />
+	</definition>
+
+	<definition name="viewPublicVarsityTeacher" extends="app.homepage">
+		<put-attribute name="title" value="Public University Teacher" />
+		<put-attribute name="content" value="/WEB-INF/tiles/publicteacher.jsp" />
+	</definition>
+	<!--Teacher Area End-->
+
+	<!--Basic Form Area Start-->
+
+	<definition name="viewTeacher" extends="app.homepage">
+		<put-attribute name="title" value="Teacher" />
+		<put-attribute name="content" value="/WEB-INF/tiles/teacher.jsp" />
+	</definition>
+
+	<definition name="viewUniversityType" extends="app.homepage">
+		<put-attribute name="title" value="University Type" />
+		<put-attribute name="content" value="/WEB-INF/tiles/universitytype.jsp" />
+	</definition>
+
+	<definition name="viewUnivarsity" extends="app.homepage">
+		<put-attribute name="title" value="University" />
+		<put-attribute name="content" value="/WEB-INF/tiles/university.jsp" />
+	</definition>
+
+	<definition name="viewAchievement" extends="app.homepage">
+		<put-attribute name="title" value="Achievement" />
+		<put-attribute name="content" value="/WEB-INF/tiles/achievement.jsp" />
+	</definition>
+
+	<definition name="viewResearch" extends="app.homepage">
+	<put-attribute name="title" value="Research" />
+	<put-attribute name="content" value="/WEB-INF/tiles/research.jsp" />
+</definition>
+
+	<definition name="viewDepartmentType" extends="app.homepage">
+		<put-attribute name="title" value="Department Type" />
+		<put-attribute name="content" value="/WEB-INF/tiles/departmenttype.jsp" />
+	</definition>
+
+	<definition name="viewFormTest" extends="app.homepage">
+		<put-attribute name="title" value="Form Test" />
+		<put-attribute name="content" value="/WEB-INF/tiles/formtest.jsp" />
+	</definition>
+
+	<!--Basic Form Area End-->
+
+	<!--Design Page Here-->
+	<definition name="showBdNewspaper" extends="app.homepage">
+		<put-attribute name="title" value="Bangladeshi Newspaper" />
+		<put-attribute name="content" value="/WEB-INF/tiles/bdnewspaper.jsp" />
+	</definition>
+
+	<definition name="showIntPaper" extends="app.homepage">
+		<put-attribute name="title" value="International Newspaper" />
+		<put-attribute name="content" value="/WEB-INF/tiles/internationalnewspaper.jsp" />
+	</definition>
+
+	<definition name="showNoticeBoard" extends="app.homepage">
+		<put-attribute name="title" value="Notice Board" />
+		<put-attribute name="content" value="/WEB-INF/tiles/alluniversitynoticeboard.jsp" />
+	</definition>
+
+	<definition name="showAdmissionInfo" extends="app.homepage">
+		<put-attribute name="title" value="Admission Information" />
+		<put-attribute name="content" value="/WEB-INF/tiles/alladmissioninfo.jsp" />
+	</definition>
+
+	<definition name="showEventInfo" extends="app.homepage">
+		<put-attribute name="title" value="Event Information" />
+		<put-attribute name="content" value="/WEB-INF/tiles/alluniversityevents.jsp" />
+	</definition>
+
+	<definition name="showConvocationInfo" extends="app.homepage">
+		<put-attribute name="title" value="Convocation Information" />
+		<put-attribute name="content" value="/WEB-INF/tiles/alluniversityconvocation.jsp" />
+	</definition>
+
+	<definition name="showJobSite" extends="app.homepage">
+		<put-attribute name="title" value="Job Sites" />
+		<put-attribute name="content" value="/WEB-INF/tiles/jobsite.jsp" />
+	</definition>
+
+</tiles-definitions>
+
